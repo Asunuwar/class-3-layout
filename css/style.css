@@ -1,83 +1,91 @@
+/* reset */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-.container{
+img {
   width: 100%;
-  background-color: green;
-
 }
 
-.flex{
-  /* flex put bos size by side */
-  display:flex;
-/*  flex-wrap  = wrap or unwrap*/
+/* helpers */
+.container {
+  width: 100%;
+  padding: 0px 200px;
+}
+
+/* flex helpers */
+.flex {
+  display: flex;
   flex-wrap: wrap;
-  background-color:orange;
+  background-color: orange;
   margin-bottom: 20px;
 }
 
-.flex-center{
-    justify-content: center;
-  }
-
-.flex-column{
+.flex-column {
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 
-.flex-align-center{
+.flex-center {
+  justify-content: center;
+}
+
+.flex-align-center {
   align-items: center;
-
 }
 
-.flex-grid{
-  display: wrap;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  background-color: lightblue;
-
-
-
-
-}
-
-
+/* boxes */
 .box {
   width: 150px;
   height: 150px;
-  background-color: #ef930;
+  background-color: #ef93a0;
   border: 3px solid #d71f43;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 .box-tall {
   width: 150px;
+  height: 300px;
+}
+
+/* grid example */
+.flex-grid-150 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(150px * 4 + 10px * 3);
+  margin: 0 auto; /* basic centering */
+}
+
+.box-150 {
+  width: 150px;
   height: 150px;
+  background-color: #ef93a0;
+  border: 3px solid #d71f43;
+  margin-bottom: 10px;
 }
 
-
-.float {
-  float: left;
+.box-150-dummy {
+  width: 150px;
+  height: 0px;
 }
 
-.bold {
-  font-weight:
-    color:red;
-}
-
-.inline {
-  display: inline;
+/* percent example */
+.box-percent {
+  width: 33.33%;
+  background-color: #ef93a0;
+  border: 3px solid #d71f43;
 }

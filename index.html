@@ -1,86 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Layout</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Layout</title>
-
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-  <div class="flex flex-center flex-align-center">
-    <div class="box">
-
-    </div>
-    <div class="box">
-
-    </div>
-    <div class="box">
-
-    </div>
-    <div class="box">
-
-    </div>
-  </div>
-
-  <div class="flex flex-align-center">
-
-    <div class="box">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- basic row -->
+    <h1>BASIC ROW</h1>
+    <div class="flex flex-center">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </div>
 
-    <div class="box">
+    <!-- different box sizes -->
+    <h1>DIFFERENT BOX SIZES</h1>
+    <div class="flex flex-center flex-align-center">
+      <div class="box"></div>
+      <div class="box box-tall"></div>
+      <div class="box"></div>
     </div>
 
-    <div class="box box-tall">
+    <!-- column example -->
+    <h1>COLUMN EXAMPLE</h1>
+    <div class="flex-column flex-align-center">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </div>
 
-    <div class="box">
+    <!-- grid example -->
 
+    <!-- NOTE: THE DUMMY DIVS, THIS FIXES THE LAYOUT -->
+    <div class="container">
+      <h1>GRID EXAMPLE (FIXED!)</h1>
+      <div class="flex-grid-150">
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150"></div>
+        <div class="box-150-dummy"></div>
+        <div class="box-150-dummy"></div>
+      </div>
     </div>
-  </div>
 
-
-<div class="container">
-  <div class="flex-grid">
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-
-
-  </div>
-</div>
-
-
-  <!-- <div>
-    <!-- floats -->
-  <!-- <h1> Float</h1>
-    <div class="box float">
+    <!-- percent example -->
+    <div class="container">
+      <h1>PERCENT EXAMPLE</h1>
+      <div class="flex">
+        <div class="box-percent">
+          <img src="http://placekitten.com/200/300" alt="">
+        </div>
+        <div class="box-percent">
+          <img src="http://placekitten.com/200/300" alt="">
+        </div>
+        <div class="box-percent">
+          <img src="http://placekitten.com/200/300" alt="">
+        </div>
+        <div class="box-percent">
+          <img src="http://placekitten.com/200/300" alt="">
+        </div>
+        <div class="box-percent">
+          <img src="http://placekitten.com/200/300" alt="">
+        </div>
+      </div>
     </div>
-    <div class="box float">
-    </div>
-    <div class="box float">
-    </div>
-    <div class="box float">
-    </div>
-    <div class="box float">
-    </div> -->
 
-  <!--
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <a href="#">magna aliqua</a>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip >ex ea commodo consequat. <span class="bold"> commondo</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum.</p>
-
-      <!-- * span use to styling text into text
-    * stack side by side -->
-  <!-- <span>one</span>
-      <span>two</span>
-      <span>three</span>
-    </div>  -->
-
-</body>
-
+  </body>
 </html>
